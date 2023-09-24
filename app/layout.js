@@ -1,19 +1,19 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Bebas_Neue } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const bebasNeue = Bebas_Neue({ subsets: ["latin"], weight: "400" });
 
 import Navigation from "@/components/Navigation";
 
 export const metadata = {
-  title: "Perfect Prerolls",
+  title: "Perfect PreRolls",
   description: "Packed and Ready To Go",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`dark ${inter.className}`}>
+      <body className={`dark ${bebasNeue.className}`}>
         <Navigation />
         {children}
       </body>
