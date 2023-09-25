@@ -71,7 +71,9 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       backgroundImage: {
-        "cannabis-hero": "url('/images/cannabis-hero.jpg')",
+        "cannabis-cover": "url('/images/cannabis-cover.jpg')",
+        "purple-cannabis": "url('/images/purple-cannabis.jpg')",
+        "green-cannabis": "url('/images/green-cannabis.jpg')",
       },
     },
   },

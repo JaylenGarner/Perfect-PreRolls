@@ -82,5 +82,5 @@
 }
 
 .primary_button {
-  @apply font-bold text-[40px] border-2 border-white border-solid pl-4 pr-4 pt-1 pb-1 rounded-lg mt-4
+  @apply font-bold text-[40px] border-2 border-white border-solid pt-2 pb-2 pr-4 pl-4 rounded-lg mt-4
 }
