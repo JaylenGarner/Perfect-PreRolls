@@ -6,13 +6,7 @@ import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
-
-const menuItems = [
-  { page: "Home", path: "/" },
-  { page: "Services", path: "/services" },
-  { page: "About Us", path: "/about" },
-  { page: "Contact", path: "/contact" },
-];
+import { menuItems } from "@/lib/data";
 
 const MobileNavigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,7 +53,6 @@ const MobileNavigation = () => {
       {isOpen && (
         <motion.div
           className="z-50 h-screen overflow-auto fixed top-0 right-0 w-1/2 flex flex-col bg-[#020817] pt-12"
-          div
           ref={menuRef}
           initial={{ x: 100 }}
           animate={{ x: 0 }}
@@ -77,10 +70,11 @@ const MobileNavigation = () => {
             onClick={() => setIsOpen(!isOpen)}
           />
 
-          {menuItems.map((item, i) => {
+          {menuItems.map((item) => {
             return (
               <Link
                 href={item.path}
+                key={item.page}
                 className="pr-4 pl-4 pt-2 pb-2"
                 onClick={() => setIsOpen(!isOpen)}
               >

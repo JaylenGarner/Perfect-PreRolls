@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { words } from "@/lib/data";
 
 export default function Home() {
   return (
@@ -12,27 +13,18 @@ export default function Home() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <motion.span
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 0.9 }}
-        >
-          ANY SIZE
-        </motion.span>
-        <motion.span
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1, duration: 0.9 }}
-        >
-          ANY SHAPE
-        </motion.span>
-        <motion.span
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.5, duration: 0.9 }}
-        >
-          ANY WHERE
-        </motion.span>
+        {words.map((word) => {
+          return (
+            <motion.span
+              key={word.text}
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: word.delay, duration: 0.9 }}
+            >
+              {word.text}
+            </motion.span>
+          );
+        })}
 
         <Link href={"/about"} className="flex flex_center pt-4">
           <motion.button

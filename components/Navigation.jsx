@@ -3,13 +3,7 @@
 import MenuItem from "./MenuItem";
 import Link from "next/link";
 import { motion } from "framer-motion";
-
-const menuItems = [
-  { page: "Home", path: "/" },
-  { page: "Services", path: "/services" },
-  { page: "About Us", path: "/about" },
-  { page: "Contact", path: "/contact" },
-];
+import { menuItems } from "@/lib/data";
 
 const Navigation = () => {
   return (

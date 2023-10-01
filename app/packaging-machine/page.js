@@ -9,33 +9,7 @@ import {
 } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPuzzlePiece } from "@fortawesome/free-solid-svg-icons";
-import { faSuitcaseRolling } from "@fortawesome/free-solid-svg-icons";
-import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
-import { faBoltLightning } from "@fortawesome/free-solid-svg-icons";
-
-const cards = [
-  {
-    title: "Versatile",
-    body: "Adjust results with this multifunctional machine; it packages any size or shape pre-roll, offering adaptability and varied functions",
-    icon: faPuzzlePiece,
-  },
-  {
-    title: "Portable",
-    body: "Compact and sleek, our machine takes up no more space than a laptop, providing you with convenience, layout flexibility, and cost-effectiveness",
-    icon: faSuitcaseRolling,
-  },
-  {
-    title: "User Friendly",
-    body: "Operation is intuitive, requiring minimal to no training, making it accessible and user-friendly for everyone",
-    icon: faThumbsUp,
-  },
-  {
-    title: "Highly Efficient",
-    body: "Produces perfectly packed pre-rolls quickly and easily",
-    icon: faBoltLightning,
-  },
-];
+import { cards } from "@/lib/data";
 
 const PackagingMachine = () => {
   return (
@@ -45,12 +19,12 @@ const PackagingMachine = () => {
         image={"bg-placeholder-machine"}
       />
       <motion.div
-        className="flex flex-col items-center pt-16 "
+        className="flex flex-col items-center pt-16 pr-4 pl-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <h2 className="text-5xl max-md:text-3xl md:w-3/5 max-md:w-full text-center text-bold max-md:pr-8 max-md:pl-8">
+        <h2 className="text-5xl max-md:text-4xl md:w-3/5 max-md:w-full text-center text-bold max-md:pr-8 max-md:pl-8">
           Our machine is the comprehensive solution, accommodating businesses of
           all sizes
         </h2>
@@ -58,7 +32,7 @@ const PackagingMachine = () => {
         <div className="pt-8 flex  justify-center flex-wrap">
           {cards.map((card) => {
             return (
-              <Card className="service_info_card">
+              <Card className="service_info_card" key={card.title}>
                 <CardHeader className="flex justify-center items-center text-center ">
                   <CardTitle className="tracking-wide text-5xl max-md:text-3xl">
                     {card.title} &nbsp;
@@ -73,7 +47,7 @@ const PackagingMachine = () => {
           })}
         </div>
 
-        <h2 className="text-3xl text-center p-4">
+        <h2 className="text-3xl text-center p-4 md:pt-8 pb-8">
           <span className="text-[#1AAE70] cursor-pointer">
             Contact us&nbsp;
           </span>
