@@ -27,7 +27,7 @@ const MobileMenuItem = ({ item, setIsOpen }) => {
             Contact
           </DialogTrigger>
           <DialogContent
-            className="flex justify-center"
+            className="flex justify-center sm:max-w-3/4 sm:h-4/5"
             id="dialog"
             setIsOpen={setIsOpen}
           >

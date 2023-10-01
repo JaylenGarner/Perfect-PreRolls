@@ -20,54 +20,67 @@ const ContactForm = () => {
   const [message, setMessage] = useState("");
 
   return (
-    <Card className="w-[500px] border-none">
+    <Card className="w-full border-none h-fit">
       <CardHeader>
-        <CardTitle className="text-4xl tracking-wide">Contact Us</CardTitle>
+        <CardTitle className="text-4xl tracking-wide max-sm:text-3xl">
+          Contact Us
+        </CardTitle>
       </CardHeader>
       <CardContent>
         <form>
           <div className="grid w-full items-center gap-4">
-            <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="subject" className="text-xl">
+            <div className="flex flex-col space-y-1 w-full">
+              <Label htmlFor="subject" className="form_label">
                 Subject
               </Label>
               <Input
+                className="form_input"
                 id="subject"
+                value={subject}
                 placeholder="What is your message about?"
+                required
                 onChange={(e) => setSubject(e.target.value)}
               />
             </div>
 
             <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="name" className="text-xl">
+              <Label htmlFor="name" className="form_label ">
                 Name
               </Label>
               <Input
+                className="form_input"
                 id="name"
+                value={name}
                 placeholder="Your Name"
+                required
                 onChange={(e) => setName(e.target.value)}
               />
             </div>
 
             <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="email" className="text-xl">
+              <Label htmlFor="email" className="form_label">
                 Email
               </Label>
               <Input
+                className="form_input"
                 id="email"
+                value={email}
                 placeholder="Email Address"
+                required
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
 
             <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="message" className="text-xl">
+              <Label htmlFor="message" className="form_label">
                 Message
               </Label>
               <Textarea
+                className="text-lg h-[180px] max-sm:h-[110px] resize-none"
                 id="message"
+                value={message}
                 placeholder="Your Message"
-                className="resize-none"
+                required
                 onChange={(e) => setMessage(e.target.value)}
               />
             </div>
@@ -75,7 +88,9 @@ const ContactForm = () => {
         </form>
       </CardContent>
       <CardFooter className="flex justify-center">
-        <Button>Send</Button>
+        <Button className=" text-xl " type="submit">
+          Send
+        </Button>
       </CardFooter>
     </Card>
   );

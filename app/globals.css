@@ -112,3 +112,13 @@
 .service_info_card {
   @apply w-[500px] h-[320px] m-4 max-sm:mr-0 max-sm:ml-0 max-sm:w-[300px]  max-lg:h-fit
 }
+
+/* Contact */
+
+.form_label {
+  @apply text-xl
+}
+
+.form_input {
+  @apply text-lg  h-[60px] max-sm:h-[40px] w-full
+}
