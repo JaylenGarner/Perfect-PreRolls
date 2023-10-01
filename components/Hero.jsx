@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Hero = ({ heading, image }) => {
   return (
     <motion.div
-      className={`w-full flex_center bg-cover bg-top ${image} h-2/5 bg-blend-darken bg-black bg-opacity-60 z-0`}
+      className={`w-full flex_center bg-cover ${image} h-2/5 bg-blend-darken bg-black bg-opacity-60 z-0`}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}

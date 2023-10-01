@@ -10,13 +10,11 @@ const About = () => {
     <div className="h-screen">
       <Hero heading={"About Us"} image={"bg-purple-cannabis"} />
       <motion.div
-        className="flex flex-col items-center pt-16 "
+        className="flex flex-col items-center pt-8 "
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <h2 className="text-5xl">Perfect PreRolls</h2>
-
         <div className="text-center w-1/3 pt-8 text-3xl space-y-8 pb-16">
           <p>
             Perfect PreRolls LLC plans to revolutionize the cannabis industry by

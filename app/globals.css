@@ -88,3 +88,7 @@
 .service_card {
   @apply flex flex-col flex_center text-center h-[500px] w-[500px] bg-blend-darken bg-black bg-opacity-50  transition-all duration-700 bg-cover p-8  text-7xl cursor-pointer hover:bg-opacity-30
 }
+
+.service_info_card {
+  @apply w-[500px] h-[320px] m-8
+}
