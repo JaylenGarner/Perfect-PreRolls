@@ -24,7 +24,7 @@ const ContractPacking = () => {
             product is ready for sale quickly and efficiently.
           </p>
 
-          <h2 className="text-3xl text-center pb-8 pt-8">
+          <h2 className="text-3xl text-center pb-8 p-4">
             <span className="text-[#1AAE70] cursor-pointer">
               Contact us&nbsp;
             </span>

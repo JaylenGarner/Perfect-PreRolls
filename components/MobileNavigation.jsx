@@ -58,7 +58,7 @@ const MobileNavigation = () => {
 
       {isOpen && (
         <motion.div
-          className="z-50 min-h-screen overflow-auto absolute top-0 bottom-0 right-0 w-1/2 flex flex-col bg-[#020817] pt-12"
+          className="z-50 h-screen overflow-auto fixed top-0 right-0 w-1/2 flex flex-col bg-[#020817] pt-12"
           div
           ref={menuRef}
           initial={{ x: 100 }}

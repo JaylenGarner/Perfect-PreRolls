@@ -9,7 +9,7 @@ const About = () => {
     <div className="h-screen">
       <Hero heading={"About Us"} image={"bg-purple-cannabis"} />
       <motion.div
-        className="flex flex-col items-center pt-8 "
+        className="flex flex-col items-center pt-8 pb-16"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}

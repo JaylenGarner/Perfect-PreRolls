@@ -10,7 +10,7 @@ const Services = () => {
     <div className="h-screen">
       <Hero heading={"Our Services"} image={"bg-green-cannabis"} />
       <motion.div
-        className="flex flex-col items-center"
+        className="flex flex-col items-center "
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
