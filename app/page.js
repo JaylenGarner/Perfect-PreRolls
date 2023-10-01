@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main>
       <motion.div
-        className="min-h-screen bg-cannabis-cover bg-cover bg-blend-darken bg-black bg-opacity-50 flex_center flex-col font-bold text-[90px]"
+        className="min-h-screen bg-cannabis-cover bg-cover bg-blend-darken bg-black bg-opacity-50 flex_center flex-col font-bold text-[90px] max-md:text-[70px]"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}

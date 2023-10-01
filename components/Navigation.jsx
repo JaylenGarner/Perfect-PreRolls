@@ -1,5 +1,9 @@
 "use client";
 
+import MenuItem from "./MenuItem";
+import Link from "next/link";
+import { motion } from "framer-motion";
+
 const menuItems = [
   { page: "Home", path: "/" },
   { page: "Services", path: "/services" },
@@ -7,14 +11,10 @@ const menuItems = [
   { page: "Contact", path: "/contact" },
 ];
 
-import MenuItem from "./MenuItem";
-import Link from "next/link";
-import { motion } from "framer-motion";
-
 const Navigation = () => {
   return (
     <motion.div
-      className="w-full h-[150px] absolute top-0 flex items-center justify-center space-x-20 z-10"
+      className="navigation_desktop"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.2 }}
@@ -23,7 +23,7 @@ const Navigation = () => {
         <div className="flex items-center space-x-4">
           <motion.img
             src="images/logo.png"
-            className="w-20"
+            className="w-14"
             initial={{ opacity: 1 }}
             whileHover={{ opacity: 0.7 }}
           ></motion.img>
