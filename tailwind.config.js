@@ -74,6 +74,8 @@ module.exports = {
         "cannabis-cover": "url('/images/cannabis-cover.jpg')",
         "purple-cannabis": "url('/images/purple-cannabis.jpg')",
         "green-cannabis": "url('/images/green-cannabis.jpg')",
+        "placeholder-machine": "url('/images/placeholder-machine.jpg')",
+        "placeholder-joints": "url('/images/placeholder-joints.jpg')",
       },
     },
   },

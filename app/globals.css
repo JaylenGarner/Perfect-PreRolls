@@ -84,3 +84,7 @@
 .primary_button {
   @apply w-[280px] h-[80px] font-bold text-[40px] border-2 border-white border-solid rounded-lg
 }
+
+.service_card {
+  @apply flex flex-col flex_center text-center h-[500px] w-[500px] bg-blend-darken bg-black bg-opacity-50  transition-all duration-700 bg-cover p-8  text-7xl cursor-pointer hover:bg-opacity-30
+}
