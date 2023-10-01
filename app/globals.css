@@ -85,6 +85,10 @@
   @apply w-[280px] h-[80px] font-bold text-[40px] border-2 border-white border-solid rounded-lg
 }
 
+.content_body {
+   @apply text-center md:w-3/5 max-md:w-full max-md:pr-8 max-md:pl-8 pt-8 text-3xl space-y-8
+}
+
 /* Navigation */
 
 .navigation {
