@@ -102,9 +102,9 @@
 /* Services */
 
 .service_card {
-  @apply flex flex-col flex_center text-center h-[500px] w-[500px] bg-blend-darken bg-black bg-opacity-50  transition-all duration-700 bg-cover p-8  text-7xl cursor-pointer hover:bg-opacity-30
+  @apply flex flex-col flex_center text-center h-[500px] w-[500px] max-xl:h-[400px]  max-xl:w-[400px] max-sm:w-[300px] max-sm:h-[300px] bg-blend-darken bg-black bg-opacity-60 max-sm:bg-opacity-20 max-sm:hover:bg-opacity-0 transition-all duration-700 bg-cover p-8 m-4 text-7xl max-sm:text-5xl cursor-pointer hover:bg-opacity-50
 }
 
 .service_info_card {
-  @apply w-[500px] h-[32♦0px] m-8
+  @apply w-[500px] h-[320px] m-8
 }

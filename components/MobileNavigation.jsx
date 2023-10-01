@@ -1,8 +1,8 @@
 "use client";
 
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -16,6 +16,21 @@ const menuItems = [
 
 const MobileNavigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const menuRef = useRef(null);
+
+  useEffect(() => {
+    const handleDocumentClick = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleDocumentClick);
+
+    return () => {
+      document.removeEventListener("click", handleDocumentClick);
+    };
+  }, [isOpen]);
 
   return (
     <motion.div
@@ -44,6 +59,8 @@ const MobileNavigation = () => {
       {isOpen && (
         <motion.div
           className="z-50 h-screen absolute top-0 right-0 w-1/2 flex flex-col bg-[#020817] pt-12"
+          div
+          ref={menuRef}
           initial={{ x: 100 }}
           animate={{ x: 0 }}
           transition={{

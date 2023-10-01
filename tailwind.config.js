@@ -76,6 +76,9 @@ module.exports = {
         "green-cannabis": "url('/images/green-cannabis.jpg')",
         "placeholder-machine": "url('/images/placeholder-machine.jpg')",
         "placeholder-joints": "url('/images/placeholder-joints.jpg')",
+        "placeholder-machine-dark":
+          "url('/images/placeholder-machine-dark.jpg')",
+        "placeholder-joints-dark": "url('/images/placeholder-joints-dark.jpg')",
       },
     },
   },

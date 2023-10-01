@@ -15,9 +15,9 @@ const Services = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <div className="flex space-x-8 pt-16 pb-16 ">
+        <div className="flex justify-center pt-16 pb-16 flex-wrap ">
           <Link href={"/packaging-machine"}>
-            <Card className="service_card bg-placeholder-machine">
+            <Card className="service_card bg-placeholder-machine max-sm:bg-placeholder-machine-dark">
               <h3>Patented</h3>
               <h3>Packaging</h3>
               <h3>Machine</h3>
@@ -25,7 +25,7 @@ const Services = () => {
           </Link>
 
           <Link href={"/contract-packing"}>
-            <Card className="service_card bg-placeholder-joints">
+            <Card className="service_card bg-placeholder-joints max-sm:bg-placeholder-joints-dark">
               <h3>Contract</h3>
               <h3>Packing</h3>
             </Card>

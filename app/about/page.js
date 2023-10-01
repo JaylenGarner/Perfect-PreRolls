@@ -1,7 +1,6 @@
 "use client";
 
 import Hero from "@/components/Hero";
-import Button from "@/components/Button";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -15,7 +14,7 @@ const About = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <div className="text-center w-1/3 pt-8 text-3xl space-y-8 pb-16">
+        <div className="text-center w-3/4 max-md:w-full max-md:pr-8 max-md:pl-8 pt-8 text-3xl  space-y-8 pb-16">
           <p>
             Perfect PreRolls LLC plans to revolutionize the cannabis industry by
             offering the only filling machine that can pack papers of any size
