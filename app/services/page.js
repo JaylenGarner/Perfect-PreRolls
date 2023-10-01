@@ -10,7 +10,7 @@ const Services = () => {
     <div className="h-screen">
       <Hero heading={"Our Services"} image={"bg-green-cannabis"} />
       <motion.div
-        className="flex flex-col items-center "
+        className="flex flex-col items-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -23,10 +23,13 @@ const Services = () => {
               <h3>Machine</h3>
             </Card>
           </Link>
-          <Card className="service_card bg-placeholder-joints">
-            <h3>Contract</h3>
-            <h3>Packing</h3>
-          </Card>
+
+          <Link href={"/contract-packing"}>
+            <Card className="service_card bg-placeholder-joints">
+              <h3>Contract</h3>
+              <h3>Packing</h3>
+            </Card>
+          </Link>
         </div>
       </motion.div>
     </div>

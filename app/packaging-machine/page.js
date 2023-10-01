@@ -77,6 +77,13 @@ const PackagingMachine = () => {
             </CardHeader>
           </Card>
         </div>
+
+        <h2 className="text-3xl text-center pt-8 pb-8 flex">
+          <span className="text-[#1AAE70] cursor-pointer">
+            Contact us&nbsp;
+          </span>
+          today to learn more about our Patented Pre-roll packing machine
+        </h2>
       </motion.div>
     </div>
   );
