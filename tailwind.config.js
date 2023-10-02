@@ -73,12 +73,14 @@ module.exports = {
       backgroundImage: {
         "cannabis-cover": "url('/images/cannabis-cover.jpg')",
         "purple-cannabis": "url('/images/purple-cannabis.jpg')",
-        "green-cannabis": "url('/images/green-cannabis.jpg')",
+
         "placeholder-machine": "url('/images/placeholder-machine.jpg')",
         "placeholder-joints": "url('/images/placeholder-joints.jpg')",
         "placeholder-machine-dark":
           "url('/images/placeholder-machine-dark.jpg')",
         "placeholder-joints-dark": "url('/images/placeholder-joints-dark.jpg')",
+        sunset: "url('/images/sunset.jpg')",
+        "pink-cannabis": "url('/images/pink-cannabis.jpg')",
       },
     },
   },

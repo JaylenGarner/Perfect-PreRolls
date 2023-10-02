@@ -1,13 +1,22 @@
 "use client";
 
-import ContactForm from "./ContactForm";
+import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
     <div className="border-t border-slate-900 flex flex-col items-center">
-      {/* <ContactForm /> */}
-      <div className="pt-8 pb-8 text-3xl text-center">Developed By </div>
-      <span className="text-xl text-slate-400 pb-4">
+      <div className="pt-8 space-y-2 text-3xl flex flex-col items-center">
+        <span>Developed By</span>
+        <Link href="https://moonraydevelopment.com/" target="_blank">
+          <motion.img
+            src="images\moonray-logo.svg"
+            className="w-[100px]"
+            whileHover={{ opacity: 0.6, transition: { duration: 0.6 } }}
+          />
+        </Link>
+      </div>
+      <span className="text-xl text-slate-400 p-4 text-center">
         2023 © Perfect PreRolls. All rights reserved
       </span>
     </div>

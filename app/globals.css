@@ -98,7 +98,7 @@
 }
 
 .primary_button {
-  @apply w-[280px] h-[80px] max-md:w-[220px]  font-bold text-[40px] max-md:text-[34px] border-2 border-white border-solid rounded-lg
+  @apply w-[240px] h-[80px] max-md:w-[220px]  font-bold text-[40px] max-md:text-[34px] border-2 border-white border-solid rounded-lg
 }
 
 .content_body {

@@ -6,7 +6,7 @@ import ContactForm from "@/components/ContactForm";
 const Contact = () => {
   return (
     <div>
-      <Hero heading={"Contact Us"} image={"bg-purple-cannabis"} />
+      <Hero heading={"Contact Us"} image={"bg-pink-cannabis"} />
       <div className="flex justify-center">
         <ContactForm />
       </div>

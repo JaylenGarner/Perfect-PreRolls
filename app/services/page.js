@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const Services = () => {
   return (
     <div>
-      <Hero heading={"Our Services"} image={"bg-green-cannabis"} />
+      <Hero heading={"Our Services"} image={"bg-sunset"} />
       <motion.div
         className="flex flex-col items-center "
         initial={{ opacity: 0 }}
