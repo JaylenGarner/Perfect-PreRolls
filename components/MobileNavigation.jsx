@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import MenuItem from "./MenuItem";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -16,15 +15,7 @@ const MobileNavigation = () => {
 
   useEffect(() => {
     const handleDocumentClick = (event) => {
-      const dialogElement = document.getElementById("dialog");
-      console.log("Clicked Target:", event.target);
-      console.log("Dialog Element:", dialogElement);
-
-      if (
-        menuRef.current &&
-        !menuRef.current.contains(event.target) &&
-        (!dialogElement || !dialogElement.contains(event.target))
-      ) {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
         setIsOpen(false);
       }
     };
@@ -38,7 +29,7 @@ const MobileNavigation = () => {
 
   return (
     <motion.div
-      className="navigation_mobile "
+      className="navigation_mobile"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.2 }}
@@ -62,7 +53,7 @@ const MobileNavigation = () => {
 
       {isOpen && (
         <motion.div
-          className="z-50  h-screen overflow-auto fixed top-0 right-0 w-1/2 flex flex-col bg-[#020817] pt-16"
+          className="z-50 h-screen overflow-auto fixed top-0 right-0 w-1/2 flex flex-col bg-[#020817] pt-16"
           ref={menuRef}
           initial={{ x: 100 }}
           animate={{ x: 0 }}
@@ -81,7 +72,13 @@ const MobileNavigation = () => {
           />
 
           {menuItems.map((item) => {
-            return <MobileMenuItem item={item} setIsOpen={setIsOpen} />;
+            return (
+              <MobileMenuItem
+                item={item}
+                setIsOpen={setIsOpen}
+                key={item.page}
+              />
+            );
           })}
         </motion.div>
       )}

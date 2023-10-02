@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="h-screen">
+    <div>
       <Hero heading={"About Us"} image={"bg-purple-cannabis"} />
       <motion.div
         className="flex flex-col items-center pt-8 pb-16"

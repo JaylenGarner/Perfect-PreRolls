@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const ContractPacking = () => {
   return (
-    <div className="h-screen">
+    <div>
       <Hero heading={"Contract Packing"} image={"bg-placeholder-joints"} />
 
       <motion.div

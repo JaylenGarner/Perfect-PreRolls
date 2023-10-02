@@ -13,7 +13,7 @@ import { cards } from "@/lib/data";
 
 const PackagingMachine = () => {
   return (
-    <div className="h-screen max-w-screen">
+    <div className=" max-w-screen">
       <Hero
         heading={"Patented Packaging Machine"}
         image={"bg-placeholder-machine"}

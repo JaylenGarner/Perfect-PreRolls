@@ -2,8 +2,6 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import ContactForm from "./ContactForm";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 const MenuItem = ({ item }) => {
   return (
@@ -13,16 +11,7 @@ const MenuItem = ({ item }) => {
       whileHover={{ borderBottom: "2px solid #FFFFFF", opacity: 0.8 }}
       style={{ position: "relative", transition: "border-bottom 0.3s ease-in" }}
     >
-      {item.page !== "Contact" ? (
-        <Link href={item.path}>{item.page}</Link>
-      ) : (
-        <Dialog>
-          <DialogTrigger>Contact</DialogTrigger>
-          <DialogContent className="flex justify-center">
-            <ContactForm />
-          </DialogContent>
-        </Dialog>
-      )}
+      <Link href={item.path}>{item.page}</Link>
     </motion.div>
   );
 };

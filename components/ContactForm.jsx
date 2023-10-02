@@ -2,13 +2,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "./ui/textarea";
 import { Label } from "@/components/ui/label";
@@ -20,14 +14,9 @@ const ContactForm = () => {
   const [message, setMessage] = useState("");
 
   return (
-    <Card className="w-full border-none h-fit">
-      <CardHeader>
-        <CardTitle className="text-4xl tracking-wide max-sm:text-3xl">
-          Contact Us
-        </CardTitle>
-      </CardHeader>
+    <Card className="w-[1000px] max-xl:w-5/6 border-none h-fit ">
       <CardContent>
-        <form>
+        <form className="pt-16">
           <div className="grid w-full items-center gap-4">
             <div className="flex flex-col space-y-1 w-full">
               <Label htmlFor="subject" className="form_label">
@@ -76,7 +65,7 @@ const ContactForm = () => {
                 Message
               </Label>
               <Textarea
-                className="text-lg h-[180px] max-sm:h-[110px] resize-none"
+                className="text-lg h-[180px]  resize-none"
                 id="message"
                 value={message}
                 placeholder="Your Message"
@@ -88,7 +77,7 @@ const ContactForm = () => {
         </form>
       </CardContent>
       <CardFooter className="flex justify-center">
-        <Button className=" text-xl " type="submit">
+        <Button className=" text-2xl w-[200px] font-bold" type="submit">
           Send
         </Button>
       </CardFooter>

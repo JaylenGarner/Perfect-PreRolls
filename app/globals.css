@@ -75,6 +75,22 @@
   }
 }
 
+
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+  }
+}
+
 /* General */
 
 .flex_center {
@@ -120,5 +136,5 @@
 }
 
 .form_input {
-  @apply text-lg  h-[60px] max-sm:h-[40px] w-full
+  @apply text-lg  h-[60px] w-full
 }

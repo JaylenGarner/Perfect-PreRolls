@@ -5,6 +5,7 @@ const bebasNeue = Bebas_Neue({ subsets: ["latin"], weight: "400" });
 
 import Navigation from "@/components/Navigation";
 import MobileNavigation from "@/components/MobileNavigation";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Perfect PreRolls",
@@ -14,14 +15,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`dark ${bebasNeue.className}`}>
+      <body
+        className={`dark no-scrollbar flex flex-col min-h-screen ${bebasNeue.className}`}
+      >
         <div className="max-md:hidden">
           <Navigation />
         </div>
         <div className="md:hidden">
           <MobileNavigation />
         </div>
-        {children}
+        <div className="flex-grow">{children}</div>
+        <Footer />
       </body>
     </html>
   );
