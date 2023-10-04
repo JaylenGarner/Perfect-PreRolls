@@ -1,6 +1,7 @@
 "use client";
 
 import Hero from "@/components/Hero";
+import Link from "next/link";
 import {
   Card,
   CardDescription,
@@ -47,12 +48,14 @@ const PackagingMachine = () => {
           })}
         </div>
 
-        <h2 className="text-3xl text-center p-4 md:pt-8 pb-8">
-          <span className="text-[#1AAE70] cursor-pointer">
-            Contact us&nbsp;
-          </span>
-          today to learn more about our Patented Pre-roll packing machine
-        </h2>
+        <Link href={"/contact"}>
+          <h2 className="text-3xl text-center p-4 md:pt-8 pb-8">
+            <span className="text-[#1AAE70] cursor-pointer">
+              Contact us&nbsp;
+            </span>
+            today to learn more about our Patented Pre-roll packing machine
+          </h2>
+        </Link>
       </motion.div>
     </div>
   );

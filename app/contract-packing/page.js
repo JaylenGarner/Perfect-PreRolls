@@ -1,6 +1,7 @@
 "use client";
 
 import Hero from "@/components/Hero";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 const ContractPacking = () => {
@@ -23,13 +24,15 @@ const ContractPacking = () => {
             product is ready for sale quickly and efficiently.
           </p>
 
-          <h2 className="text-3xl text-center p-4  pb-8">
-            <span className="text-[#1AAE70] cursor-pointer">
-              Contact us&nbsp;
-            </span>
-            today to learn more about our Packing services and how we can help
-            streamline your business operations
-          </h2>
+          <Link href={"/contact"}>
+            <h2 className="text-3xl text-center p-4  pb-8">
+              <span className="text-[#1AAE70] cursor-pointer">
+                Contact us&nbsp;
+              </span>
+              today to learn more about our Packing services and how we can help
+              streamline your business operations
+            </h2>
+          </Link>
         </div>
       </motion.div>
     </div>
