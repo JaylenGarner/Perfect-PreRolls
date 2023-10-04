@@ -8,6 +8,7 @@ import { Textarea } from "./ui/textarea";
 import { Label } from "@/components/ui/label";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
+import { faCircleNotch } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 import handleEmail from "@/lib/handleEmail";
 
@@ -114,9 +115,25 @@ const ContactForm = () => {
               </div>
 
               <div className="flex justify-center pt-2">
-                <Button className=" text-2xl w-[200px] font-bold" type="submit">
-                  Send
-                </Button>
+                {isLoading === true ? (
+                  <Button
+                    className=" text-2xl w-[200px] font-bold"
+                    variant="secondary"
+                    disabled
+                  >
+                    <FontAwesomeIcon
+                      icon={faCircleNotch}
+                      className="animate-spin fa-sm"
+                    />
+                  </Button>
+                ) : (
+                  <Button
+                    className=" text-2xl w-[200px] font-bold "
+                    type="submit"
+                  >
+                    Send
+                  </Button>
+                )}
               </div>
             </div>
           </form>
