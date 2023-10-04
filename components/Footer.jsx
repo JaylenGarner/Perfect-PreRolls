@@ -17,7 +17,7 @@ const Footer = () => {
         </Link>
       </div>
       <span className="text-xl text-slate-400 p-4 text-center">
-        2023 © Perfect PreRolls. All rights reserved
+        2023 © Perfect PreRolls LLC. All rights reserved
       </span>
     </div>
   );
