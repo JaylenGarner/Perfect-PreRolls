@@ -71,16 +71,23 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       backgroundImage: {
-        "cannabis-cover": "url('/images/cannabis-cover.jpg')",
-        "purple-cannabis": "url('/images/purple-cannabis.jpg')",
+        "cannabis-cover":
+          "url('https://perfect-prerolls.s3.amazonaws.com/Public/Assets/cannabis-cover.jpg')",
+        "purple-cannabis":
+          "url('https://perfect-prerolls.s3.amazonaws.com/Public/Assets/purple-cannabis.jpg')",
 
-        "placeholder-machine": "url('/images/placeholder-machine.jpg')",
-        "placeholder-joints": "url('/images/placeholder-joints.jpg')",
+        "placeholder-machine":
+          "url('https://perfect-prerolls.s3.amazonaws.com/Public/Assets/placeholder-machine.jpg')",
+        "placeholder-joints":
+          "url('https://perfect-prerolls.s3.amazonaws.com/Public/Assets/placeholder-joints.jpg')",
         "placeholder-machine-dark":
-          "url('/images/placeholder-machine-dark.jpg')",
-        "placeholder-joints-dark": "url('/images/placeholder-joints-dark.jpg')",
-        sunset: "url('/images/sunset.jpg')",
-        "pink-cannabis": "url('/images/pink-cannabis.jpg')",
+          "url('https://perfect-prerolls.s3.amazonaws.com/Public/Assets/placeholder-machine-dark.jpg')",
+        "placeholder-joints-dark":
+          "url('https://perfect-prerolls.s3.amazonaws.com/Public/Assets/placeholder-joints-dark.jpg')",
+        sunset:
+          "url('https://perfect-prerolls.s3.amazonaws.com/Public/Assets/sunset.jpg')",
+        "pink-cannabis":
+          "url('https://perfect-prerolls.s3.amazonaws.com/Public/Assets/pink-cannabis.jpg')",
       },
     },
   },

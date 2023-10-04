@@ -10,7 +10,7 @@ const Footer = () => {
         <span>Developed By</span>
         <Link href="https://moonraydevelopment.com/" target="_blank">
           <motion.img
-            src="images\moonray-logo.svg"
+            src="https://perfect-prerolls.s3.amazonaws.com/Public/Assets/moonray-logo.svg"
             className="w-[100px]"
             whileHover={{ opacity: 0.6, transition: { duration: 0.6 } }}
           />

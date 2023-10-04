@@ -37,7 +37,7 @@ const MobileNavigation = () => {
       <Link href="/" passHref>
         <div className="flex items-center space-x-4">
           <motion.img
-            src="images/logo.png"
+            src="https://perfect-prerolls.s3.amazonaws.com/Public/Assets/logo.png"
             className="w-14"
             initial={{ opacity: 1 }}
             whileHover={{ opacity: 0.7 }}
