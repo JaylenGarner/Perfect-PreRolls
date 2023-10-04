@@ -2,14 +2,20 @@
 
 import Hero from "@/components/Hero";
 import ContactForm from "@/components/ContactForm";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
     <div>
       <Hero heading={"Contact Us"} image={"bg-pink-cannabis"} />
-      <div className="flex justify-center">
+      <motion.div
+        className="flex justify-center"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         <ContactForm />
-      </div>
+      </motion.div>
     </div>
   );
 };
