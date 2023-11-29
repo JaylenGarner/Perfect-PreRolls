@@ -24,7 +24,7 @@ const Navigation = () => {
         </div>
       </Link>
 
-      <div className="flex space-x-6 text-3xl">
+      <div className="flex space-x-6 text-2xl">
         {menuItems.map((item) => {
           return <MenuItem item={item} key={item.page} />;
         })}

@@ -15,16 +15,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`dark no-scrollbar flex flex-col min-h-screen ${bebasNeue.className}`}
-      >
+      <body className={`dark no-scrollbar ${bebasNeue.className}`}>
         <div className="max-md:hidden">
           <Navigation />
         </div>
         <div className="md:hidden">
           <MobileNavigation />
         </div>
-        <div className="flex-grow">{children}</div>
+        <div>{children}</div>
         <Footer />
       </body>
     </html>
