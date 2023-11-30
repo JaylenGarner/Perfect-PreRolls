@@ -14,7 +14,7 @@ const Navigation = () => {
       transition={{ duration: 1.2 }}
     >
       <Link href="/" passHref>
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 w-20">
           <motion.img
             src="https://perfect-prerolls.s3.amazonaws.com/Public/Assets/logo.png"
             className="w-14"
@@ -24,11 +24,13 @@ const Navigation = () => {
         </div>
       </Link>
 
-      <div className="flex space-x-6 text-2xl">
+      <div className="flex space-x-6 text-2xl pr-24 pl-4">
         {menuItems.map((item) => {
           return <MenuItem item={item} key={item.page} />;
         })}
       </div>
+
+      <div></div>
     </motion.div>
   );
 };

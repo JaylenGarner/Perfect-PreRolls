@@ -112,7 +112,7 @@
 }
 
 .navigation_desktop {
-  @apply navigation   items-center justify-center space-x-20
+  @apply navigation   items-center justify-center
 }
 
 .navigation_mobile {
