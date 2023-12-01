@@ -6,17 +6,27 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <main className="min-h-screen 0 flex ">
+    <main className="min-h-screen 0 flex flex-col">
       <motion.div
-        className="w-full h-[50vh] bg-gradient-to-b from-[#474747]  to-[#020817] flex justify-center pt-8 "
+        className="w-full h-[50vh] bg-[#474747] flex justify-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <img
+        {/* <img
           src="https://perfect-prerolls.s3.amazonaws.com/Public/Assets/loader-front-image-transparent.png"
           className="cover"
-        ></img>
+        ></img> */}
+
+        <video
+          autoPlay
+          controls={false}
+          loop
+          muted
+          className=" object-cover object-right h-full pt-4"
+        >
+          <source src="https://perfect-prerolls.s3.amazonaws.com/Public/Assets/loader-360-animation.mp4" />
+        </video>
       </motion.div>
 
       {/* <Link href={"/about"} className="flex flex_center pt-4">

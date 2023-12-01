@@ -76,8 +76,8 @@ module.exports = {
         "purple-cannabis":
           "url('https://perfect-prerolls.s3.amazonaws.com/Public/Assets/purple-cannabis.jpg')",
 
-        "placeholder-machine":
-          "url('https://perfect-prerolls.s3.amazonaws.com/Public/Assets/placeholder-machine.jpg')",
+        "machine-front":
+          "url('https://perfect-prerolls.s3.amazonaws.com/Public/Assets/machine-front.png')",
         "placeholder-joints":
           "url('https://perfect-prerolls.s3.amazonaws.com/Public/Assets/placeholder-joints.jpg')",
         "placeholder-machine-dark":
