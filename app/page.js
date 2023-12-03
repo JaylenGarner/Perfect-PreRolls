@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="min-h-screen 0 flex flex-col">
       <motion.div
-        className="w-full h-[50vh] bg-[#474747] flex justify-center"
+        className="w-full h-[50vh]  flex justify-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
