@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="min-h-screen 0 flex flex-col">
       <motion.div
-        className="w-full h-[50vh]  flex justify-center"
+        className="w-full h-[50vh] max-h-[700px] flex justify-center mb-16"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -23,11 +23,38 @@ export default function Home() {
           controls={false}
           loop
           muted
-          className=" object-cover object-right h-full pt-4"
+          className=" object-cover object-right h-full max-h-[700px] pt-4 mt-8"
         >
           <source src="https://perfect-prerolls.s3.amazonaws.com/Public/Assets/loader-360-animation.mp4" />
         </video>
       </motion.div>
+
+      <motion className="flex justify-center space-x-12">
+        <motion.h3
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2, delay: 0.8 }}
+          className=" text-6xl"
+        >
+          ANY SIZE.
+        </motion.h3>
+        <motion.h3
+          className=" text-6xl"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2, delay: 1.6 }}
+        >
+          ANY SHAPE.
+        </motion.h3>
+        <motion.h3
+          className=" text-6xl"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2, delay: 2.4 }}
+        >
+          ANYWHERE.
+        </motion.h3>
+      </motion>
 
       {/* <Link href={"/about"} className="flex flex_center pt-4">
           <motion.button
