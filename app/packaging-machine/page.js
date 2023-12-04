@@ -50,7 +50,7 @@ const PackagingMachine = () => {
 
         <Link href={"/contact"}>
           <h2 className="text-3xl text-center p-4 pt-16 pb-16">
-            <span className="text-[#C9E24D] cursor-pointer">
+            <span className="text-[#DEF212] cursor-pointer">
               Contact us&nbsp;
             </span>
             today to learn more about our Patented Pre-roll packing machine

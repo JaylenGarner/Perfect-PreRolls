@@ -92,6 +92,8 @@ module.exports = {
           "url('https://perfect-prerolls.s3.amazonaws.com/Public/Assets/machine-banner.png')",
         "packed-banner":
           "url('https://perfect-prerolls.s3.amazonaws.com/Public/Assets/packed-banner.png')",
+        "newsletter-banner":
+          "url('https://perfect-prerolls.s3.amazonaws.com/Public/Assets/envelope.jpg')",
       },
     },
   },

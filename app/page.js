@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-// import { words } from "@/lib/data";
 
 export default function Home() {
   return (
@@ -77,10 +76,10 @@ export default function Home() {
           <motion.button
             className="primary_button"
             initial={{ opacity: 0 }}
-            whileHover={{
-              backgroundColor: "white",
-              color: "#030303",
-            }}
+            // whileHover={{
+            //   // backgroundColor: "#DEF212",
+            //   color: "#030303",
+            // }}
             animate={{ opacity: 1, transition: { delay: 2.5, duration: 0.6 } }}
             transition={{ duration: 0.5, opacity: 1 }}
           >

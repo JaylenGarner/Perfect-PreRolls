@@ -16,27 +16,47 @@ const Services = () => {
       >
         <div className="flex justify-center pt-16 pb-16 flex-wrap lg:space-x-8 max-lg:space-y-8 ">
           <Link href={"/packaging-machine"}>
-            <div className="flex flex-col items-center  h-[500px] w-[500px] max-sm:w-[350px] max-sm:h-[350px] p-8 rounded-xl hover:opacity-80 transition-opacity duration-300 border border-slate-800 overflow-contain">
-              <h2 className="text-4xl text-center">Patended Packing Machine</h2>
+            <motion.div
+              transition={{ duration: 0.7 }}
+              initial={{
+                background: "linear-gradient(to top right, #1e1e1e, #1e1e1e)",
+              }}
+              whileHover={{
+                opacity: 0.95,
+                background: "linear-gradient(to top right, #DEF212 ,  #030303)",
+              }}
+              className="flex flex-col items-center  h-[500px] w-[500px] max-sm:w-[350px] max-sm:h-[350px] p-8 rounded-xl  duration-500 border border-[#DEF212] overflow-contain"
+            >
+              <h2 className="text-4xl text-center">Patented Packing Machine</h2>
               <img
                 src="https://perfect-prerolls.s3.amazonaws.com/Public/Assets/machine-front.png"
                 className="w-5/6"
                 alt="Cannabis pre-rolling machine"
               />
-            </div>
+            </motion.div>
           </Link>
 
           <Link href={"/contract-packing"}>
-            <div className="flex flex-col items-center  h-[500px] w-[500px] max-sm:w-[350px] max-sm:h-[350px] p-8  rounded-xl hover:opacity-80 transition-opacity duration-300 border border-slate-800">
+            <motion.div
+              className="flex flex-col items-center  h-[500px] w-[500px] max-sm:w-[350px] max-sm:h-[350px] p-8 rounded-xl  duration-500 border border-[#DEF212] overflow-contain"
+              transition={{ duration: 0.7 }}
+              initial={{
+                background: "linear-gradient(to top right, #1e1e1e, #1e1e1e)",
+              }}
+              whileHover={{
+                opacity: 0.95,
+                background: "linear-gradient(to top right, #DEF212 ,  #030303)",
+              }}
+            >
               <h2 className="text-4xl text-center">Contract Packing</h2>
               <div className="flex flex_center h-full w-full">
                 <img
                   src="https://perfect-prerolls.s3.amazonaws.com/Public/Assets/packed-magazine-transparent.png"
-                  className="w-3/4"
+                  className="w-4/6"
                   alt="Rolled marijuana cigarettes"
                 />
               </div>
-            </div>
+            </motion.div>
           </Link>
         </div>
       </motion.div>

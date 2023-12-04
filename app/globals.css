@@ -97,17 +97,11 @@
   @apply flex justify-center items-center
 }
 
-.button {
-  @apply w-[240px] h-[80px] max-md:w-[220px]  font-bold text-[40px] max-md:text-[34px] border-2 border-white border-solid rounded-lg
-}
 
 .primary_button {
-  @apply button
+  @apply w-[240px] h-[80px] max-md:w-[220px]  font-bold text-[40px] max-md:text-[34px] border-2 border-[#DEF212] hover:bg-[#DEF212]  rounded-lg hover:text-[#030303] transition-colors duration-500
 }
 
-.loading_button {
-  @apply button bg-white
-}
 
 .content_body {
    @apply text-center md:w-1/2 max-md:w-full max-md:pr-8 max-md:pl-8 pt-8 text-3xl space-y-8
