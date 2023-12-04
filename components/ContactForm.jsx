@@ -116,17 +116,12 @@ const ContactForm = () => {
 
               <div className="flex justify-center pt-2">
                 {isLoading === true ? (
-                  <motion.button
-                    className="primary_button bg-white"
-                    transition={{ duration: 0.5, opacity: 1 }}
-                    disabled
-                  >
+                  <button className="primary_button">
                     <FontAwesomeIcon
                       icon={faCircleNotch}
                       className="animate-spin fa-sm"
-                      color="black"
                     />
-                  </motion.button>
+                  </button>
                 ) : (
                   <motion.button
                     className="primary_button"

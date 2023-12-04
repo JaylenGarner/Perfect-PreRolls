@@ -97,8 +97,16 @@
   @apply flex justify-center items-center
 }
 
-.primary_button {
+.button {
   @apply w-[240px] h-[80px] max-md:w-[220px]  font-bold text-[40px] max-md:text-[34px] border-2 border-white border-solid rounded-lg
+}
+
+.primary_button {
+  @apply button
+}
+
+.loading_button {
+  @apply button bg-white
 }
 
 .content_body {
