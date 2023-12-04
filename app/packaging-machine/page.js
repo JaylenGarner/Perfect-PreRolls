@@ -17,7 +17,7 @@ const PackagingMachine = () => {
     <div className=" max-w-screen">
       <Hero
         heading={"Patented Packaging Machine"}
-        image={"bg-placeholder-machine"}
+        image={"bg-machine-banner"}
       />
       <motion.div
         className="flex flex-col items-center pt-16 pr-4 pl-4"
@@ -25,12 +25,12 @@ const PackagingMachine = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <h2 className="text-5xl max-md:text-4xl md:w-3/5 max-md:w-full text-center text-bold max-md:pr-8 max-md:pl-8">
+        <h2 className="text-5xl max-md:text-4xl md:w-1/2  max-md:w-3/4 text-center text-bold max-md:pl-8">
           Our machine is the comprehensive solution, accommodating businesses of
           all sizes
         </h2>
 
-        <div className="pt-8 flex  justify-center flex-wrap">
+        <div className="pt-8 flex justify-center flex-wrap md:w-1/2">
           {cards.map((card) => {
             return (
               <Card className="service_info_card" key={card.title}>

@@ -15,7 +15,7 @@ const Services = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <div className="flex justify-center pt-16 pb-16 flex-wrap space-x-8">
+        <div className="flex justify-center pt-16 pb-16 flex-wrap lg:space-x-8 max-lg:space-y-8">
           <Link href={"/packaging-machine"}>
             <div className="flex flex-col items-center  h-[500px] w-[500px] p-8 rounded-xl hover:opacity-80 transition-opacity duration-300 border border-slate-800 overflow-contain">
               <h2 className="text-4xl">Patended Packing Machine</h2>

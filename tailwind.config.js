@@ -88,6 +88,10 @@ module.exports = {
           "url('https://perfect-prerolls.s3.amazonaws.com/Public/Assets/sunset.jpg')",
         "pink-cannabis":
           "url('https://perfect-prerolls.s3.amazonaws.com/Public/Assets/pink-cannabis.jpg')",
+        "machine-banner":
+          "url('https://perfect-prerolls.s3.amazonaws.com/Public/Assets/machine-banner.png')",
+        "packed-banner":
+          "url('https://perfect-prerolls.s3.amazonaws.com/Public/Assets/packed-banner.png')",
       },
     },
   },

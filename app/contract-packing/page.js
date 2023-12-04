@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const ContractPacking = () => {
   return (
     <div>
-      <Hero heading={"Contract Packing"} image={"bg-placeholder-joints"} />
+      <Hero heading={"Contract Packing"} image={"bg-packed-banner"} />
 
       <motion.div
         className="flex flex-col items-center pt-8"
