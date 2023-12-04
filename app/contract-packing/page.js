@@ -26,9 +26,7 @@ const ContractPacking = () => {
 
           <Link href={"/contact"}>
             <h2 className="text-3xl text-center p-8  pb-8">
-              <span className="text-[#1AAE70] cursor-pointer">
-                Contact us&nbsp;
-              </span>
+              <span className="text-[#C9E24D]">Contact us&nbsp;</span>
               today to learn more about our Packing services and how we can help
               streamline your business operations
             </h2>

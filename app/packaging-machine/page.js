@@ -25,7 +25,7 @@ const PackagingMachine = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <h2 className="text-5xl max-md:text-4xl md:w-1/2  max-md:w-3/4 text-center text-bold max-md:pl-8">
+        <h2 className="text-5xl max-md:text-4xl md:w-1/2  max-md:w-3/4 text-center text-bold ">
           Our machine is the comprehensive solution, accommodating businesses of
           all sizes
         </h2>
@@ -49,8 +49,8 @@ const PackagingMachine = () => {
         </div>
 
         <Link href={"/contact"}>
-          <h2 className="text-3xl text-center p-4 md:pt-8 pb-8">
-            <span className="text-[#1AAE70] cursor-pointer">
+          <h2 className="text-3xl text-center p-4 pt-16 pb-16">
+            <span className="text-[#C9E24D] cursor-pointer">
               Contact us&nbsp;
             </span>
             today to learn more about our Patented Pre-roll packing machine

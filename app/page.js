@@ -7,31 +7,43 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <main className="min-h-screen 0 flex flex-col">
+      {/* Display animation on desktop */}
       <motion.div
-        className="w-full h-[50vh] md:max-h-[700px] max-md:max-h-[400px] flex justify-center mb-16"
+        className="w-full h-[50vh] md:max-h-[700px] max-md:max-h-[400px] flex justify-center mb-16 max-md:hidden"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        {/* Display animation on desktop */}
         <video
           autoPlay
           controls={false}
           loop
           muted
-          className=" object-cover object-right h-full max-h-[700px] pt-4 mt-8 max-md:hidden"
+          playsInline
+          className=" object-cover object-right h-full max-h-[700px] pt-4 mt-8"
         >
-          <source src="https://perfect-prerolls.s3.amazonaws.com/Public/Assets/loader-360-animation.mp4" />
+          <source
+            src="https://perfect-prerolls.s3.amazonaws.com/Public/Assets/loader-360-animation.mp4"
+            className="max-md:hidden"
+          />
         </video>
+      </motion.div>
 
+      <motion.div
+        className="w-full h-[50vh] md:max-h-[700px] max-md:max-h-[400px] flex justify-center mb-16 md:hidden"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
         {/* Display static image on mobile and tablet */}
         <img
           src="https://perfect-prerolls.s3.amazonaws.com/Public/Assets/machine-front.png"
-          className="object-cover object-right h-full max-h-[400px] pt-4 mt-8 md:hidden"
+          className="object-cover object-right h-full max-h-[400px] pt-4 mt-8"
+          alt="Cannabis pre-rolling machine"
         />
       </motion.div>
 
-      <motion className="flex justify-center md:space-x-12  max-md:flex-col lg:text-6xl max-lg:text-5xl max-md:space-y-2 max-md:items-center">
+      <motion.div className="flex justify-center md:space-x-12  max-md:flex-col lg:text-6xl max-lg:text-5xl max-md:space-y-2 max-md:items-center">
         <motion.h3
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -53,15 +65,21 @@ export default function Home() {
         >
           ANYWHERE.
         </motion.h3>
-      </motion>
+      </motion.div>
 
-      {/* <Link href={"/about"} className="flex flex_center pt-4">
+      <motion.div
+        className="p-8"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2, delay: 3.2 }}
+      >
+        <Link href={"/about"} className="flex flex_center">
           <motion.button
             className="primary_button"
             initial={{ opacity: 0 }}
             whileHover={{
-              backgroundColor: "#FFFFFF",
-              color: "#A32C8F",
+              backgroundColor: "white",
+              color: "#030303",
             }}
             animate={{ opacity: 1, transition: { delay: 2.5, duration: 0.6 } }}
             transition={{ duration: 0.5, opacity: 1 }}
@@ -69,7 +87,7 @@ export default function Home() {
             Learn More
           </motion.button>
         </Link>
-      </motion.div> */}
+      </motion.div>
     </main>
   );
 }

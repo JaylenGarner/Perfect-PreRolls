@@ -12,6 +12,7 @@ const Footer = () => {
           <motion.img
             src="https://perfect-prerolls.s3.amazonaws.com/Public/Assets/moonray-logo.svg"
             className="w-[100px]"
+            alt="MoonRay Development Logo"
             whileHover={{ opacity: 0.6, transition: { duration: 0.6 } }}
           />
         </Link>

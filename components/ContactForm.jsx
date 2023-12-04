@@ -17,7 +17,7 @@ const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [complete, setComplete] = useState(false);
 
   const handleSubmit = async (e) => {
@@ -50,7 +50,7 @@ const ContactForm = () => {
             transition={{ duration: 1 }}
           >
             <FontAwesomeIcon icon={faCircleCheck} color="#1AAE70" size="3x" />
-            <h2 className="text-4xl max-md:text-3xl md:w-3/5 max-md:w-full text-center text-bold max-md:pr-8 max-md:pl-8">
+            <h2 className="text-4xl max-md:text-3xl md:w-3/5 max-md:w-full text-center text-bold max-md:pr-8 max-md:pl-8 pb-8">
               Thank you for reaching out! We've received your email and will be
               in touch shortly
             </h2>
@@ -116,23 +116,28 @@ const ContactForm = () => {
 
               <div className="flex justify-center pt-2">
                 {isLoading === true ? (
-                  <Button
-                    className=" text-2xl w-[200px] font-bold"
-                    variant="secondary"
+                  <motion.button
+                    className="primary_button bg-white"
+                    transition={{ duration: 0.5, opacity: 1 }}
                     disabled
                   >
                     <FontAwesomeIcon
                       icon={faCircleNotch}
                       className="animate-spin fa-sm"
+                      color="black"
                     />
-                  </Button>
+                  </motion.button>
                 ) : (
-                  <Button
-                    className=" text-2xl w-[200px] font-bold "
-                    type="submit"
+                  <motion.button
+                    className="primary_button"
+                    whileHover={{
+                      backgroundColor: "white",
+                      color: "#030303",
+                    }}
+                    transition={{ duration: 0.5, opacity: 1 }}
                   >
                     Send
-                  </Button>
+                  </motion.button>
                 )}
               </div>
             </div>

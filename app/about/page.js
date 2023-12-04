@@ -48,8 +48,8 @@ const About = () => {
             <motion.button
               className="primary_button"
               whileHover={{
-                backgroundColor: "#FFFFFF",
-                color: "#A32C8F",
+                backgroundColor: "white",
+                color: "#030303",
               }}
               transition={{ duration: 0.5, opacity: 1 }}
             >

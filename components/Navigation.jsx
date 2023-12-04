@@ -18,9 +18,10 @@ const Navigation = () => {
           <motion.img
             src="https://perfect-prerolls.s3.amazonaws.com/Public/Assets/logo.png"
             className="w-14"
+            alt="Perfect PreRolls logo"
             initial={{ opacity: 1 }}
             whileHover={{ opacity: 0.7 }}
-          ></motion.img>
+          />
         </div>
       </Link>
 
