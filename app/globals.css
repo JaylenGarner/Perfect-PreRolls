@@ -99,7 +99,7 @@
 
 
 .primary_button {
-  @apply w-[240px] h-[80px] max-md:w-[220px]  font-bold text-[40px] max-md:text-[34px] border-2 border-[#DEF212] hover:bg-[#DEF212]  rounded-lg hover:text-[#030303] transition-colors duration-500
+  @apply w-[240px] h-[80px] max-md:w-[220px]  font-bold text-[40px] max-md:text-[34px] border-2 border-[#c1ff00] hover:bg-[#c1ff00]  rounded-lg hover:text-[#030303] transition-colors duration-500
 }
 
 
