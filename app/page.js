@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import NewsletterForm from "@/components/NewsletterForm";
 
 export default function Home() {
   return (
@@ -67,25 +68,26 @@ export default function Home() {
       </motion.div>
 
       <motion.div
-        className="p-8"
+        className=""
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 2, delay: 3.2 }}
       >
-        <Link href={"/about"} className="flex flex_center">
+        <Link href={"/about"} className="flex flex_center pb-16 pt-8">
           <motion.button
             className="primary_button"
             initial={{ opacity: 0 }}
-            // whileHover={{
-            //   // backgroundColor: "#DEF212",
-            //   color: "#030303",
-            // }}
             animate={{ opacity: 1, transition: { delay: 2.5, duration: 0.6 } }}
             transition={{ duration: 0.5, opacity: 1 }}
           >
             Learn More
           </motion.button>
         </Link>
+
+        <div className="flex justify-center items-center text-6xl flex-col w-full border-t pt-16 ">
+          <h2>Sign up to our newsletter</h2>
+          <NewsletterForm />
+        </div>
       </motion.div>
     </main>
   );
