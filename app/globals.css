@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Green #C1FF00 */
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -97,11 +99,13 @@
   @apply flex justify-center items-center
 }
 
-
-.primary_button {
+.button {
   @apply w-[240px] h-[80px] max-md:w-[220px]  font-bold text-[40px] max-md:text-[34px] border-2 border-[#DEF212] hover:bg-[#DEF212]  rounded-lg hover:text-[#030303] transition-colors duration-500
 }
 
+.heading {
+  @apply w-full text-center text-6xl max-lg:text-5xl p-16
+}
 
 .content_body {
    @apply text-center md:w-1/2 max-md:w-full max-md:pr-8 max-md:pl-8 pt-8 text-3xl space-y-8
@@ -121,17 +125,47 @@
   @apply navigation items-center justify-between pl-4 pr-4
 }
 
+/* Splash */
+
+.animation_container {
+  @apply w-full h-[50vh] md:max-h-[700px] max-md:max-h-[400px] flex justify-center max-md:hidden
+}
+
+.machine_animation {
+  @apply h-full max-h-[700px] mt-8 pt-4 object-cover object-right
+}
+
+.splash_image_container {
+  @apply w-full h-[50vh] md:max-h-[700px] max-md:max-h-[400px] flex justify-center md:hidden
+}
+
+.splash_image {
+  @apply h-full max-h-[400px] mt-8 object-cover object-right
+}
+
+.splash_tagline {
+  @apply flex_center max-md:flex-col md:space-x-12 max-md:space-y-2 lg:text-6xl max-lg:text-5xl pt-16 pb-16
+}
+
 /* Services */
 
 .service_card {
-  @apply flex flex-col flex_center text-center h-[500px] w-[500px] max-xl:h-[400px]  max-xl:w-[400px] max-sm:w-[300px] max-sm:h-[300px] bg-blend-darken bg-black bg-opacity-60 max-sm:bg-opacity-20 max-sm:hover:bg-opacity-0 transition-all duration-700 bg-cover p-8 m-4 text-7xl max-sm:text-5xl cursor-pointer hover:bg-opacity-50
+  @apply flex_center flex-col  text-center h-[500px] w-[500px] max-xl:h-[400px]  max-xl:w-[400px] max-sm:w-[300px] max-sm:h-[300px] bg-blend-darken bg-black bg-opacity-60 max-sm:bg-opacity-20 max-sm:hover:bg-opacity-0 transition-all duration-700 bg-cover p-8 m-4 text-7xl max-sm:text-5xl cursor-pointer hover:bg-opacity-50
 }
 
 .service_info_card {
   @apply w-[500px] h-[320px] m-4 max-sm:mr-0 max-sm:ml-0 max-sm:w-[300px]  max-lg:h-fit
 }
 
-/* Contact */
+/* Forms */
+
+.form_container {
+  @apply w-[1000px] max-xl:w-5/6 border-none h-fit
+}
+
+.form_field {
+  @apply flex flex-col space-y-1.5
+}
 
 .form_label {
   @apply text-xl
@@ -139,4 +173,8 @@
 
 .form_input {
   @apply text-lg  h-[60px] w-full
+}
+
+.success_message {
+  @apply text-4xl w-2/3 text-center pb-8
 }

@@ -96,6 +96,7 @@ const ContactForm = () => {
                   value={email}
                   placeholder="Email Address"
                   required
+                  type="email"
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
