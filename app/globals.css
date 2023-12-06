@@ -177,7 +177,7 @@
 }
 
 .success_message {
-  @apply text-4xl w-2/3 text-center pb-8
+  @apply text-4xl sm:w-2/3  text-center pb-8
 }
 
 /* Packing Machine */
