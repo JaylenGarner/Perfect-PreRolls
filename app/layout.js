@@ -1,7 +1,5 @@
 import "./globals.css";
-import { Bebas_Neue } from "next/font/google";
-
-const bebasNeue = Bebas_Neue({ subsets: ["latin"], weight: "400" });
+import { oswald } from "@/lib/fonts";
 
 import Navigation from "@/components/Navigation";
 import MobileNavigation from "@/components/MobileNavigation";
@@ -15,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`dark no-scrollbar ${bebasNeue.className}`}>
+      <body className={`dark no-scrollbar ${oswald.className}`}>
         <div className="max-md:hidden">
           <Navigation />
         </div>

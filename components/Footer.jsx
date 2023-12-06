@@ -2,10 +2,13 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { bebasNeue } from "@/lib/fonts";
 
 const Footer = () => {
   return (
-    <div className="border-t border-slate-900 flex flex-col items-center">
+    <div
+      className={`border-t border-slate-900 flex flex-col items-center ${bebasNeue.className}`}
+    >
       <div className="pt-8 space-y-2 text-3xl flex flex-col items-center">
         <span>Developed By</span>
         <Link href="https://moonraydevelopment.com/" target="_blank">

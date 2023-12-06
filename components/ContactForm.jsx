@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
 import { faCircleNotch } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
+import { bebasNeue } from "@/lib/fonts";
 import handleEmail from "@/lib/handleEmail";
 
 const ContactForm = () => {
@@ -39,7 +40,7 @@ const ContactForm = () => {
   };
 
   return (
-    <Card className="form_container">
+    <Card className={`form_container ${bebasNeue.className}`}>
       <CardContent>
         {/* Succesful submission */}
         {complete && (

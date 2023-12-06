@@ -3,8 +3,16 @@
 import Hero from "@/components/Hero";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { bebasNeue } from "@/lib/fonts";
+import { useRouter } from "next/navigation";
 
 const About = () => {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push("/#newsletter");
+  };
+
   return (
     <div>
       <Hero heading={"About Us"} image={"bg-purple-cannabis"} />
@@ -39,13 +47,23 @@ const About = () => {
 
           <p>
             We are currently doing testing so we can have a better understanding
-            of the long-term durability and repeatability of our machines. Sign
-            up to our newsletter for updates on pre-order availability. Until
-            then,you can inquire about seeing a demonstration or consider our
-            contract packing.
+            of the long-term durability and repeatability of our machines.
+            Subscribe to our
+            <Link href={"/"} onClick={handleClick} className="text-[#C1FF00]">
+              {" "}
+              newsletter
+            </Link>{" "}
+            for updates on pre-order availability. Until then, you can{" "}
+            <Link href={"/contact"} className="text-[#C1FF00]">
+              contact us{" "}
+            </Link>{" "}
+            about seeing a demonstration or consider our contract packing.
           </p>
 
-          <Link href={"/services"} className="flex flex_center pt-4">
+          <Link
+            href={"/services"}
+            className={`flex flex_center pt-4 ${bebasNeue.className}`}
+          >
             <motion.button
               className="button"
               transition={{ duration: 0.5, opacity: 1 }}

@@ -18,17 +18,18 @@ const ContractPacking = () => {
         <div className="content_body">
           <p>
             We specialize in providing high-quality pre-rolled packing services
-            for dispensaries looking to outsource the filling/packing process.
-            Our state-of-the-art patented machine can pack a large number of
-            cigarettes/cones etc in a short amount of time, ensuring that your
-            product is ready for sale quickly and efficiently.
+            for dispensaries or producers looking for a filling/packing
+            solution. Our state-of-the-art patented machines, doing multiple
+            units at a time, can pack any shape or size cigarette/cone in a
+            short amount of time ensuring that your product is ready for sale
+            quickly and efficiently.
           </p>
 
           <Link href={"/contact"}>
             <h2 className="text-3xl text-center p-8 ">
               <span className="text-[#C1FF00]">Contact us&nbsp;</span>
               today for a demonstration or to learn more about our packing
-              services
+              services.
             </h2>
           </Link>
         </div>

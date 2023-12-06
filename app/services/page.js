@@ -2,6 +2,7 @@
 
 import Hero from "@/components/Hero";
 import Link from "next/link";
+import { bebasNeue } from "@/lib/fonts";
 import { motion } from "framer-motion";
 
 const Services = () => {
@@ -9,13 +10,13 @@ const Services = () => {
     <div>
       <Hero heading={"Our Services"} image={"bg-sunset"} />
       <motion.div
-        className="flex flex-col items-center"
+        className={`flex flex-col items-center ${bebasNeue.className}`}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
         <div className="service_cards_container">
-          <Link href={"/packaging-machine"}>
+          <Link href={"/packing-machine"}>
             <motion.div
               transition={{ duration: 0.7 }}
               initial={{

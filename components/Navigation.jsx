@@ -4,6 +4,7 @@ import MenuItem from "./MenuItem";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { menuItems } from "@/lib/data";
+import { bebasNeue } from "@/lib/fonts";
 
 const Navigation = () => {
   return (
@@ -25,7 +26,9 @@ const Navigation = () => {
         </div>
       </Link>
 
-      <div className="flex space-x-6 text-2xl pr-24 pl-4">
+      <div
+        className={`flex space-x-6 text-2xl pr-24 pl-4 ${bebasNeue.className}`}
+      >
         {menuItems.map((item) => {
           return <MenuItem item={item} key={item.page} />;
         })}

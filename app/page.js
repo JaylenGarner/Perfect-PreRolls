@@ -1,13 +1,17 @@
 "use client";
 
 import Link from "next/link";
+import { useRef } from "react";
 import MachineAnimation from "@/components/MachineAnimation";
 import NewsletterForm from "@/components/NewsletterForm";
+import { bebasNeue } from "@/lib/fonts";
 import { motion } from "framer-motion";
 
 export default function Home() {
+  const newsletterRef = useRef();
+
   return (
-    <main className="flex flex-col">
+    <main className={`flex flex-col ${bebasNeue.className}`}>
       {/* Display animation on desktop */}
       <MachineAnimation />
 
@@ -56,15 +60,15 @@ export default function Home() {
         <Link href={"/about"} className="flex_center pb-16">
           <button className="button">Learn More</button>
         </Link>
-
-        <div className="heading border-t">
-          <h2>Sign up to our newsletter</h2>
-        </div>
-
-        <div className="flex flex_center">
-          <NewsletterForm />
-        </div>
       </motion.div>
+
+      <div className="heading border-t">
+        <h2>Sign up to our newsletter</h2>
+      </div>
+
+      <div id="newsletter" ref={newsletterRef} className="flex flex_center">
+        <NewsletterForm />
+      </div>
     </main>
   );
 }

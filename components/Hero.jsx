@@ -1,11 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { bebasNeue } from "@/lib/fonts";
 
 const Hero = ({ heading, image }) => {
   return (
     <motion.div
-      className={`w-[100vw] text-center flex_center bg-cover bg-center ${image} h-[50vh] bg-blend-darken bg-black bg-opacity-60 z-0 pl-2 pr-2`}
+      className={`w-[100vw] text-center flex_center bg-cover bg-center ${image} h-[50vh] bg-blend-darken bg-black bg-opacity-60 z-0 pl-2 pr-2 ${bebasNeue.className}`}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}

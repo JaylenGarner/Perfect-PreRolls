@@ -182,5 +182,5 @@
 
 /* Packing Machine */
 .packing_info_card {
-  @apply w-[500px] h-[350px] m-4 max-sm:w-[300px] max-sm:h-[325px] bg-[#1e1e1e] border-[#C1FF00] rounded-xl
+  @apply w-[500px] h-[350px] max-sm:h-[380px] m-4 max-sm:w-[300px]   bg-[#1e1e1e] border-[#C1FF00] rounded-xl
 }
