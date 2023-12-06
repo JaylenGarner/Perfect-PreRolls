@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { menuItems } from "@/lib/data";
+import { bebasNeue } from "@/lib/fonts";
 import MobileMenuItem from "./MobileMenuItem";
 
 const MobileNavigation = () => {
@@ -54,7 +55,7 @@ const MobileNavigation = () => {
 
       {isOpen && (
         <motion.div
-          className="z-50 h-screen overflow-auto fixed top-0 right-0 w-1/2 flex flex-col bg-[#030303] pt-16"
+          className={`z-50 h-screen overflow-auto fixed top-0 right-0 w-1/2 flex flex-col bg-[#030303] pt-16 ${bebasNeue.className}`}
           ref={menuRef}
           initial={{ x: 100 }}
           animate={{ x: 0 }}

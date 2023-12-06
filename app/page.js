@@ -62,11 +62,11 @@ export default function Home() {
         </Link>
       </motion.div>
 
-      <div className="heading border-t">
-        <h2>Sign up to our newsletter</h2>
+      <div id="newsletter" className="heading border-t ">
+        <h2>Subscribe to our newsletter</h2>
       </div>
 
-      <div id="newsletter" ref={newsletterRef} className="flex flex_center">
+      <div ref={newsletterRef} className="flex flex_center">
         <NewsletterForm />
       </div>
     </main>
