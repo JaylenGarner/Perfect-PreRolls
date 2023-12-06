@@ -18,7 +18,7 @@ const Services = () => {
         <div className="service_cards_container">
           <Link href={"/packing-machine"}>
             <motion.div
-              transition={{ duration: 0.7 }}
+              transition={{ duration: 1.2 }}
               initial={{
                 background: "linear-gradient(to top right, #1e1e1e, #1e1e1e)",
               }}
@@ -40,7 +40,7 @@ const Services = () => {
           <Link href={"/contract-packing"}>
             <motion.div
               className="service_card"
-              transition={{ duration: 0.7 }}
+              transition={{ duration: 1.2 }}
               initial={{
                 background: "linear-gradient(to top right, #1e1e1e, #1e1e1e)",
               }}

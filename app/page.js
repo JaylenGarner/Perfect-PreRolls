@@ -62,7 +62,7 @@ export default function Home() {
         </Link>
       </motion.div>
 
-      <div id="newsletter" className="heading border-t ">
+      <div id="newsletter" className="heading border-t">
         <h2>Subscribe to our newsletter</h2>
       </div>
 

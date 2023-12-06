@@ -68,7 +68,7 @@ const About = () => {
               className="button"
               transition={{ duration: 0.5, opacity: 1 }}
             >
-              Our Services
+              Services
             </motion.button>
           </Link>
         </div>
