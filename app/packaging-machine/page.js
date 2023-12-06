@@ -30,16 +30,16 @@ const PackagingMachine = () => {
           all sizes
         </h2>
 
-        <div className="pt-8 flex justify-center flex-wrap md:w-1/2">
+        <div className="pt-8 flex justify-center flex-wrap md:w-full">
           {cards.map((card) => {
             return (
-              <Card className="service_info_card" key={card.title}>
-                <CardHeader className="flex justify-center items-center text-center ">
-                  <CardTitle className="tracking-wide text-5xl max-md:text-3xl">
+              <Card className="packing_info_card " key={card.title}>
+                <CardHeader className="flex justify-center items-center text-center">
+                  <CardTitle className="tracking-wide text-5xl max-md:text-3xl ">
                     {card.title} &nbsp;
                     <FontAwesomeIcon icon={card.icon} />
                   </CardTitle>
-                  <CardDescription className="text-center text-3xl pt-4 max-md:text-2xl">
+                  <CardDescription className="text-center text-3xl pt-4 max-sm:text-2xl text-slate-300">
                     {card.body}
                   </CardDescription>
                 </CardHeader>
@@ -49,7 +49,7 @@ const PackagingMachine = () => {
         </div>
 
         <Link href={"/contact"}>
-          <h2 className="text-3xl text-center p-4 pt-16 pb-16">
+          <h2 className="text-3xl text-center p-4 pt-8 pb-8">
             <span className="text-[#C1FF00] cursor-pointer">
               Contact us&nbsp;
             </span>

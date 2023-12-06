@@ -14,7 +14,7 @@ const Services = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <div className="flex justify-center pt-16 pb-16 flex-wrap lg:space-x-8 max-lg:space-y-8 ">
+        <div className="service_cards_container">
           <Link href={"/packaging-machine"}>
             <motion.div
               transition={{ duration: 0.7 }}
@@ -25,7 +25,7 @@ const Services = () => {
                 opacity: 0.95,
                 background: "linear-gradient(to top right, #C1FF00 ,  #030303)",
               }}
-              className="flex flex-col items-center  h-[500px] w-[500px] max-sm:w-[350px] max-sm:h-[350px] p-8 rounded-xl  duration-500 border border-[#C1FF00] overflow-contain"
+              className="service_card"
             >
               <h2 className="text-4xl text-center">Patented Packing Machine</h2>
               <img
@@ -38,7 +38,7 @@ const Services = () => {
 
           <Link href={"/contract-packing"}>
             <motion.div
-              className="flex flex-col items-center  h-[500px] w-[500px] max-sm:w-[350px] max-sm:h-[350px] p-8 rounded-xl  duration-500 border border-[#C1FF00] overflow-contain"
+              className="service_card"
               transition={{ duration: 0.7 }}
               initial={{
                 background: "linear-gradient(to top right, #1e1e1e, #1e1e1e)",

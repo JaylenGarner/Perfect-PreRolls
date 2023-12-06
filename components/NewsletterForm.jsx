@@ -46,10 +46,7 @@ const NewsletterForm = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <h2
-              // className="text-4xl max-md:text-3xl md:w-3/5 max-md:w-full text-center text-bold max-md:pr-8 max-md:pl-8 pb-8">
-              className="success_message"
-            >
+            <h2 className="success_message">
               Thank you for subscribing to our newsletter! Expect updates soon!
             </h2>
             <FontAwesomeIcon icon={faCircleCheck} color="#C1FF00" size="4x" />

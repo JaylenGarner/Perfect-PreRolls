@@ -100,8 +100,8 @@
 }
 
 
-.primary_button {
-  @apply w-[240px] h-[80px] max-md:w-[220px]  font-bold text-[40px] max-md:text-[34px] border-2 border-[#c1ff00] hover:bg-[#c1ff00]  rounded-lg hover:text-[#030303] transition-colors duration-500
+.button {
+  @apply w-[240px] h-[80px] max-md:w-[220px]  font-bold text-[40px] max-md:text-[34px] border-2 border-[#DEF212] hover:bg-[#DEF212]  rounded-lg hover:text-[#030303] transition-colors duration-500
 }
 
 .heading {
@@ -150,12 +150,12 @@
 
 /* Services */
 
-.service_card {
-  @apply flex_center flex-col  text-center h-[500px] w-[500px] max-xl:h-[400px]  max-xl:w-[400px] max-sm:w-[300px] max-sm:h-[300px] bg-blend-darken bg-black bg-opacity-60 max-sm:bg-opacity-20 max-sm:hover:bg-opacity-0 transition-all duration-700 bg-cover p-8 m-4 text-7xl max-sm:text-5xl cursor-pointer hover:bg-opacity-50
+.service_cards_container {
+  @apply flex justify-center pt-16 pb-16 flex-wrap
 }
 
-.service_info_card {
-  @apply w-[500px] h-[320px] m-4 max-sm:mr-0 max-sm:ml-0 max-sm:w-[300px]  max-lg:h-fit
+.service_card {
+  @apply flex flex-col items-center m-4 h-[500px] w-[500px] max-sm:w-[350px] max-sm:h-[350px] p-8 rounded-xl  duration-500 border border-[#DEF212]
 }
 
 /* Forms */
@@ -178,4 +178,9 @@
 
 .success_message {
   @apply text-4xl w-2/3 text-center pb-8
+}
+
+/* Packing Machine */
+.packing_info_card {
+  @apply w-[500px] h-[350px] m-4 max-sm:w-[300px] max-sm:h-[380px] bg-[#1e1e1e] border-[#C1FF00] rounded-xl
 }
