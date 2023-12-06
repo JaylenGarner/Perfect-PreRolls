@@ -12,7 +12,7 @@ const MachineAnimation = () => {
     >
       <video
         autoPlay
-        controls={false}
+        // controls={false}
         loop
         muted
         playsInline
