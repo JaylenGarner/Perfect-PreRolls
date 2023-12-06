@@ -13,8 +13,8 @@ export const sendEmail = async (body) => {
   const emailHtml = createHtmlTemplate(body);
 
   const params = {
-    Source: "collin@perfectprerolls.com",
-    Destination: { ToAddresses: ["collin@perfectprerolls.com"] },
+    Source: "info@perfectprerolls.com",
+    Destination: { ToAddresses: ["info@perfectprerolls.com"] },
     Message: {
       Subject: { Data: `${body.name} - ${body.subject}` },
       Body: { Html: { Data: emailHtml } },
