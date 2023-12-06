@@ -23,7 +23,10 @@ const PackagingMachine = () => {
 
   return (
     <div className=" max-w-screen">
-      <Hero heading={"Patented Packing Machine"} image={"bg-machine-banner"} />
+      <Hero
+        heading={"Patent Pending Packing Machine"}
+        image={"bg-machine-banner"}
+      />
       <motion.div
         className="flex flex-col items-center pt-16 pr-4 pl-4"
         initial={{ opacity: 0 }}
@@ -62,7 +65,7 @@ const PackagingMachine = () => {
             <span className="text-[#C1FF00] cursor-pointer">
               Contact us&nbsp;
             </span>
-            today for a demonstration or to learn more about our patented
+            today for a demonstration or to learn more about our patent pending
             machines.
           </h2>
         </Link>

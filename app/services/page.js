@@ -28,7 +28,9 @@ const Services = () => {
               }}
               className="service_card"
             >
-              <h2 className="text-4xl text-center">Patented Packing Machine</h2>
+              <h2 className="text-4xl text-center">
+                Patent Pending Packing Machine
+              </h2>
               <img
                 src="https://perfect-prerolls.s3.amazonaws.com/Public/Assets/machine-front.png"
                 className="w-5/6"
