@@ -47,7 +47,7 @@ const About = () => {
 
           <Link href={"/services"} className="flex flex_center pt-4">
             <motion.button
-              className="primary_button"
+              className="button"
               transition={{ duration: 0.5, opacity: 1 }}
             >
               Our Services

@@ -49,11 +49,20 @@ const PackagingMachine = () => {
         </div>
 
         <Link href={"/contact"}>
-          <h2 className="text-3xl text-center p-4 pt-8 pb-8">
+          <h2 className="text-3xl text-center pt-8 p-4">
             <span className="text-[#C1FF00] cursor-pointer">
               Contact us&nbsp;
             </span>
             today to learn more about our Patented Pre-roll packing machine
+          </h2>
+        </Link>
+
+        <Link href={"/"}>
+          <h2 className="text-3xl text-center p-4  pb-8">
+            <span className="text-[#C1FF00] cursor-pointer">
+              Sign up to our newsletter&nbsp;
+            </span>
+            for updates on pre-order availability
           </h2>
         </Link>
       </motion.div>
