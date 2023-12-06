@@ -18,7 +18,7 @@ const About = () => {
           <p>
             Perfect PreRolls LLC plans to revolutionize the Cannabis industry by
             offering the only filling machine that can pack papers of any size
-            and shape. Our patented machines are fast, efficient and
+            and shape. Our patented machines are fast, efficient, and
             customizable all while only taking up the space of a laptop. Our
             machines are easy to use and programmable so you can fine tune your
             settings and make perfect pre-rolls tailored to you and/or your
@@ -27,10 +27,10 @@ const About = () => {
 
           <p>
             We spent years researching and developing a new solution for any and
-            all feelings/packing needs. The process was long and tedious due to
+            all filling/packing needs. The process was long and tedious due to
             the properties and variability of cannabis flower. We went through
-            numerous iterations including some Concepts that had to be scrapped
-            completely. We invented scientific tests to ensure the progres,
+            numerous iterations including some concepts that had to be scrapped
+            completely. We invented scientific tests to ensure the progress,
             quality, and consistency of our machines. We are proud of what we
             have accomplished and are excited to share it with the world.
           </p>

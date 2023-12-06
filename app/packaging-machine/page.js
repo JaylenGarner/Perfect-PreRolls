@@ -53,7 +53,8 @@ const PackagingMachine = () => {
             <span className="text-[#C1FF00] cursor-pointer">
               Contact us&nbsp;
             </span>
-            today to learn more about our Patented Pre-roll packing machine
+            today for a demonstration or to learn more about our patented
+            machines
           </h2>
         </Link>
 
