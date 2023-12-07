@@ -12,7 +12,7 @@ const MachineAnimation = () => {
     >
       <video
         autoPlay
-        // controls={false}
+        controls
         loop
         muted
         playsInline
@@ -20,6 +20,7 @@ const MachineAnimation = () => {
       >
         <source
           src="https://perfect-prerolls.s3.amazonaws.com/Public/Assets/loader-360-animation.mp4"
+          type="video/mp4"
           className="max-md:hidden"
         />
       </video>

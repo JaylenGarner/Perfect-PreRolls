@@ -62,13 +62,25 @@ export default function Home() {
         </Link>
       </motion.div>
 
-      <div id="newsletter" className="heading border-t">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        id="newsletter"
+        className="heading border-t"
+      >
         <h2>Subscribe to our newsletter</h2>
-      </div>
+      </motion.div>
 
-      <div ref={newsletterRef} className="flex flex_center">
+      <motion.div
+        ref={newsletterRef}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="flex flex_center"
+      >
         <NewsletterForm />
-      </div>
+      </motion.div>
     </main>
   );
 }
