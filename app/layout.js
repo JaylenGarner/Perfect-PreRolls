@@ -5,6 +5,8 @@ import Navigation from "@/components/Navigation";
 import MobileNavigation from "@/components/MobileNavigation";
 import Footer from "@/components/Footer";
 
+import { Analytics } from "@vercel/analytics/react";
+
 export const metadata = {
   title: "Perfect PreRolls",
   description: "Packed and Ready To Go",
@@ -22,6 +24,7 @@ export default function RootLayout({ children }) {
         </div>
         <div>{children}</div>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
