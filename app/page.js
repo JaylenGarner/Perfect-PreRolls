@@ -69,7 +69,7 @@ export default function Home() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <h2>Subscribe to our newsletter</h2>
+        <h2>Join Our Community</h2>
       </motion.div>
 
       <motion.div
