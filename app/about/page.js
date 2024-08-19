@@ -4,15 +4,8 @@ import Hero from "@/components/Hero";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { bebasNeue } from "@/lib/fonts";
-import { useRouter } from "next/navigation";
 
 const About = () => {
-  const router = useRouter();
-
-  const handleClick = () => {
-    router.push("/#newsletter");
-  };
-
   return (
     <div>
       <Hero heading={"About Us"} image={"bg-purple-cannabis"} />
@@ -49,7 +42,7 @@ const About = () => {
             We are currently doing testing so we can have a better understanding
             of the long-term durability and repeatability of our machines.
             Subscribe to our
-            <Link href={"/"} onClick={handleClick} className="text-[#C1FF00]">
+            <Link href={"/#sign_up_form"} className="text-[#C1FF00]">
               {" "}
               newsletter
             </Link>{" "}

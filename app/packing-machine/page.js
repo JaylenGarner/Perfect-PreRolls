@@ -70,7 +70,7 @@ const PackagingMachine = () => {
           </h2>
         </Link>
 
-        <Link href={"/"} onClick={handleClick}>
+        <Link href={"/#sign_up_form"} onClick={handleClick}>
           <h2 className="text-3xl text-center p-4  pb-8">
             Subscribe to our
             <span className="text-[#C1FF00] cursor-pointer">

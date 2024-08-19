@@ -99,6 +99,9 @@
   @apply flex justify-center items-center
 }
 
+.fab {
+  @apply fixed bottom-5 right-5 bg-[#C1FF00] max-sm:w-12 max-sm:h-12 w-16 h-16 rounded-full flex justify-center items-center shadow-lg
+}
 
 .button {
   @apply w-[240px] h-[80px] max-md:w-[220px]  font-bold text-[40px] max-md:text-[34px] border-2 border-[#C1FF00] hover:bg-[#C1FF00]  rounded-lg hover:text-[#030303] transition-colors duration-500

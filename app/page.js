@@ -1,15 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { useRef } from "react";
 import MachineAnimation from "@/components/MachineAnimation";
 import NewsletterForm from "@/components/NewsletterForm";
 import { bebasNeue } from "@/lib/fonts";
 import { motion } from "framer-motion";
 
 export default function Home() {
-  const newsletterRef = useRef();
-
   return (
     <main className={`flex flex-col ${bebasNeue.className}`}>
       {/* Display animation on desktop */}
@@ -69,11 +66,10 @@ export default function Home() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <h2>Join Our Community</h2>
+        <h2 id="sign_up_form">Join Our Community</h2>
       </motion.div>
 
       <motion.div
-        ref={newsletterRef}
         className="flex flex_center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
