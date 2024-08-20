@@ -13,7 +13,6 @@ const FAB = () => {
         transition={{
           duration: 0.3,
           ease: [0, 0.71, 0.2, 1.01],
-          // delay: 4,
           scale: {
             type: "spring",
             damping: 5,
@@ -26,7 +25,7 @@ const FAB = () => {
           transition: { duration: 1 },
         }}
       >
-        <img src="/loudspeaker-icon.png" className="max-sm:w-8 w-10" />
+        <img src="/bell-icon.png" className="max-sm:w-6 w-8" />
       </motion.div>
     </Link>
   );
